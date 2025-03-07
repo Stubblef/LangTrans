@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 助手</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <button class="new-chat-btn" onclick="startNewChat()">
+                <i class="fas fa-plus"></i> 新对话
+            </button>
+        </aside>
+
+        <main class="main-content">
+            <div class="chat-container" id="chat-box"></div>
+            <div class="input-container">
+                <label for="file-upload" class="file-button">
+                    <i class="fas fa-paperclip"></i>
+                </label>
+                <input type="file" id="file-upload" onchange="handleFileSelect()">
+                <textarea 
+                    id="user-input" 
+                    class="message-input" 
+                    placeholder="输入消息或上传文件时的处理提示..." 
+                    rows="1"
+                    onkeydown="handleKeyPress(event)"></textarea>
+                <button class="send-button" onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[KEY_LIST]
+
+#OPENAI_API_KEY='sk-xxxxxx'
+
+##DEEPSEEK default name: default_deepseek_llm
+#DEEPSEEK_API_KEY='sk-81003f5a487343ff9a5d7966c3f07ffd'
+#DEEPSEEK_API_BASE='https://api.deepseek.com'
+
+DEEPSEEK_API_KEY='sk-29c1f99ddb40438fa2e3688e0f51056d'
+DEEPSEEK_API_BASE='https://dashscope.aliyuncs.com/compatible-mode/v1'
+
+##claude default name: default_claude_llm
+#ANTHROPIC_API_KEY='xxxxxx'
+#ANTHROPIC_API_URL='xxxxxx'
